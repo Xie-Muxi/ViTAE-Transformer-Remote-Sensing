@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="root@beishida:22 agent" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="root@beishida:22 agent" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false" showDifferentInSync="false" showNewOnSourceInSync="false">
+    <option name="confirmBeforeUploading" value="false" />
     <serverData>
       <paths name="root@beishida:22 agent">
         <serverdata>
           <mappings>
-            <mapping deploy="/PycharmProjects/xmx/ViTAE-Transformer-Remote-Sensing" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/PycharmProjects/xmx/ViTAE-Transformer-Remote-Sensing" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>
     </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>

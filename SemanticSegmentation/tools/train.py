@@ -80,7 +80,7 @@ def parse_args():
         choices=['none', 'pytorch', 'slurm', 'mpi'],
         default='none',
         help='job launcher')
-    parser.add_argument('--local_rank', type=int, default=0)
+    parser.add_argument('--local_rank', type=int)
     parser.add_argument(
         '--auto-resume',
         action='store_true',
@@ -104,8 +104,11 @@ def parse_args():
 
 def main():
     args = parse_args()
-
+    # print('-------------------------')
     cfg = Config.fromfile(args.config)
+    # cfg = 'configs/upernet/upernet_vitae_win_window7_512x512_80k_potsdam_epoch100.py'
+    # print('{' + f'{cfg}'+'}')
+    # cfg = args.config
     if args.cfg_options is not None:
         cfg.merge_from_dict(args.cfg_options)
 
